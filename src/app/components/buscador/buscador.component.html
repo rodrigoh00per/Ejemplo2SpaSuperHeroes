@@ -1,0 +1,13 @@
+<h1>Heroe<small> busqueda {{valorbus}}</small></h1>
+<div class="alert alert-info" *ngIf="heroes.length==0">No hay heroes con esos parametros de busqueda
+  </div>
+<div class="card-columns">
+    <app-heroe-tarjeta [indice]="heroe.idx" [heroe]="heroe" *ngFor="let heroe of heroes;let i=index"></app-heroe-tarjeta>
+</div>
+
+<!--
+<ul *ngFor="let heroe of heroes ">
+  {{heroe.nombre}}
+  {{heroe.bio}}
+</ul>
+-->
